@@ -6,7 +6,8 @@ print(csv2.columns[5:])
 i = 0
 for col in csv2.columns[5:]:
     for response in csv2[col]:
-        csv1.loc[i,'Single Exchange'] = "Question: "+ col + " Answer: "+response
+        csv1.loc[i,'Question'] = col 
+        csv1.loc[i, 'Answer'] = response
         i+=1
 csv1.to_csv("dataset.csv",index=False)
 print(csv1.head())
