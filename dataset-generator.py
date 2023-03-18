@@ -8,8 +8,8 @@ csv1 = pd.read_csv("Curious Questions Prolific.csv")
 # are collected through Prolific survey form and contained in csv2
 csv2 = pd.read_csv("Survey Responses Prolific.csv")
 # Skip first 5 columns as they contain reference data (eg. date, prolificID etc...)
-# Static questions are contained in the headers of columns 6 to 10
-static_questions = csv2.columns[5:] 
+# Static questions are contained in the headers of columns 5 to 10
+static_questions = csv2.columns[4:] 
 
 i = 0
 for question in static_questions:
